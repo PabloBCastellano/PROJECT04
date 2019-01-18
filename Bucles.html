@@ -1,0 +1,42 @@
+<html><meta charset='utf-8'>
+
+	<head>
+		<title> Bucles </title>
+	</head>
+
+	<body>
+		<p id='numeros'></p>
+		<p id='personas'></p>
+		<p id='tablamul'></p>
+		
+	<script>
+		var limite=0;
+		var n=10;
+		var tabla=0;
+		var num_tabla=6;
+		var a=0;
+		
+		var alumnos=['Pepe',12,'Ana',25,'Bacterio',33,'Juan',2,'Mortadelo',0,'Isabel','Filemón','Ofelia'];
+		while(n>=limite){
+			document.getElementById("numeros").innerHTML+="<br> El número es:&nbsp; "+n;
+			n--;
+		}
+		document.getElementById("personas").innerHTML=alumnos[2]+"&nbsp;"+alumnos[7]+"<br>";
+		<!-- alumnos.sort(); -->
+				
+		for(;alumnos[a];){
+			alumnos.sort();
+			document.getElementById("personas").innerHTML+="<br>"+alumnos[a];
+			a++;
+			
+		}
+		
+		do{
+			document.getElementById("tablamul").innerHTML+=tabla+"	X	"+num_tabla+"	=	"+tabla*num_tabla+"	<br>	";
+			tabla++;
+		}while(tabla<=10);
+	</script>
+
+	</body>
+
+</html>
